@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Hcode.com.br</title>
+    <style type='text/css'>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 30px;
+            max-width: 50vw;
+
+        }
+
+        h2 {
+            font-family: 'Segoe UI';
+            color: #ff760c;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .inline {
+            display: inline;
+            width: 60px;
+            /*pode-se formatar, mas não altera dimensões*/
+        }
+
+        .inline-block {
+            display: inline-block;
+            /*pode alterar dimensões*/
+            width: 60px;
+        }
+
+        .contents {
+            display: contents;
+            /* exclui infos de dimensões e estilos*/
+            background-color: #333;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .inline-flex {
+            display: inline-flex;
+            /* se tiver duas divs elas se comportam como bloco e ficam do lado*/
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        .inline-grid {
+            display: inline-grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        .list-item {
+            display: list-item;
+            /* se comporta como list */
+        }
+
+        .table {
+            display: table;
+        }
+
+        .linha {
+            display: table-row;
+        }
+
+        .celula {
+            display: table-cell;
+        }
+
+        .cabecalho {
+            display: table-header-group;
+        }
+
+        .cabecalho .celula {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Display: table</h2>
+
+
+        <div class="table">
+            <div class="cabecalho">
+                <div class="linha">
+                    <div class="celula">
+                        Nome
+                    </div>
+                    <div class="celula">
+                        Email
+                    </div>
+                    <div class="celula">
+                        Idade
+                    </div>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="celula">
+                    Teste
+                </div>
+                <div class="celula">
+                    Teste
+                </div>
+                <div class="celula">
+                    Teste
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 nome</td>
+                    <td>1 email</td>
+                    <td>1 idade</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container">
+        <h2>Display: list-item</h2>
+        <div class="list-item">
+            HCode
+        </div>
+        <div class="list-item">
+            <span>Teste</span>
+        </div>
+
+        <span>Hcode</span>
+        <span>Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: Inline-Grid</h2>
+        <div class="inline-grid">
+            <div>AC</div>
+            <div>C</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>X</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+        </div>
+
+        <span>Hcode</span>
+        <span>Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: Grid</h2>
+        <div class="grid">
+            <div>AC</div>
+            <div>C</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>X</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+        </div>
+
+        <span>Hcode</span>
+        <span>Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: Block</h2>
+        <div class="block">
+            HCode
+        </div>
+
+        <span>Hcode</span>
+        <span>Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: Inline</h2>
+        <div class="inline">
+            HCode
+        </div>
+
+        <span class="inline">Hcode</span>
+        <span class="inline">Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: Inline-block</h2>
+        <div class="inline-block">
+            HCode
+        </div>
+
+        <span class="inline-block">Hcode</span>
+        <span class="inline-block">Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: contents</h2>
+        <div class="contents">
+            HCode
+        </div>
+
+        <span class="contents">Hcode</span>
+        <span class="contents">Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: flex</h2>
+        <div class="flex">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </div>
+        <span class="flex">Hcode</span>
+        <span class="flex">Hcode</span>
+    </div>
+    <div class="container">
+        <h2>Display: inline-flex</h2>
+        <div class="inline-flex">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </div>
+        <div class="inline-flex">
+            <div>a</div>
+            <div>b</div>
+            <div>c</div>
+        </div>
+    </div>
+</body>
+
+</html>
